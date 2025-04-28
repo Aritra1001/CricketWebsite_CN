@@ -8,6 +8,8 @@
 
 body {
   background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000003226_1714596295_pics1.png");
+  /* background-size: cover; */
+  background-attachment: fixed;
 }
 
 /* HEADER */
@@ -27,8 +29,12 @@ header h1 {
 
 /* DESCRIPTION SECTION */
 .description-section {
-  margin: 0px auto;
+  /* margin: 0px auto; */
+  margin-left: 585px;
   text-align: center;
+  position: fixed;
+  z-index: -5;
+  margin-top: -150px;
 }
 
 .description-section h2 {
@@ -40,11 +46,16 @@ header h1 {
 /* IMAGE-SECTION */
 
 .image-section {
-  margin: 90px auto;
+  margin: 140px auto;
+}
+
+#first-img-portion{
+  top: 100px;
 }
 
 .coach-img {
-  margin: 0px auto;
+  margin-left:150px;
+  /* left: 300px; */
   background-color: #fff;
   height: 300px;
   width: 300px;
@@ -52,6 +63,7 @@ header h1 {
   padding: 10px;
   border-radius: 10px;
   position: relative;
+  z-index: -1;
   /* text-align: center; */
 }
 
@@ -74,7 +86,8 @@ header h1 {
 }
 
 .second-img-portion {
-  margin: 70px auto;
+  margin-left: 500px;
+  margin-top: 70px;
 }
 
 .second-img-container {
